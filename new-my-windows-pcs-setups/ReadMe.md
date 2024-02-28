@@ -1,4 +1,4 @@
-# New My Windows PC's Setup
+# New My Windows PC's Setups
 
 This setup guide is intended for individuals who have an understanding of basic operations in PowerShell and Registry Editor, as well as for those who use their PCs for gameplay.
 
