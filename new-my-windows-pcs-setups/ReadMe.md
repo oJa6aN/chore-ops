@@ -4,6 +4,10 @@ This setup guide is intended for individuals who have an understanding of basic 
 
 ## Deploy the integrated update tool
 
+Install App Installer from Microsoft Store.
+
+[App Installer - Microsoft Apps](https://apps.microsoft.com/detail/9nblggh4nns1)
+
 ```ps1
 Install-Module -Name PSWindowsUpdate -Force
 ```
