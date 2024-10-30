@@ -1,0 +1,36 @@
+[book]
+title = "Rust Manual"
+authors = ["Rei Nagayasu"]
+description = ""
+src = "src"
+language = "ja"
+
+[build]
+build-dir = "book"                # the directory where the output is placed
+#create-missing = true             # whether or not to create missing pages
+#use-default-preprocessors = true  # use the default preprocessors
+#extra-watch-dirs = []             # directories to watch for triggering builds
+
+[output.html]
+additional-css = ["custom.css"]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+#theme = "my-theme"
+#default-theme = "light"
+#preferred-dark-theme = "navy"
+#curly-quotes = true
+#mathjax-support = false
+#copy-fonts = true
+#additional-css = ["custom.css", "custom2.css"]
+#additional-js = ["custom.js"]
+#no-section-label = false
+#git-repository-url = "https://github.com/rust-lang/mdBook"
+#git-repository-icon = "fa-github"
+#edit-url-template = "https://github.com/rust-lang/mdBook/edit/master/guide/{path}"
+#site-url = "/example-book/"
+#cname = "myproject.rs"
+#input-404 = "not-found.md"
