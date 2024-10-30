@@ -1,0 +1,1 @@
+E:\github\oJa6aN\chores-for-windows\generate-random\app\generate_random_number\target\release\generate_random_number.exe: E:\github\oJa6aN\chores-for-windows\generate-random\app\generate_random_number\src\main.rs
