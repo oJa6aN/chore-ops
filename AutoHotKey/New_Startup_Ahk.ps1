@@ -1,10 +1,7 @@
 ﻿# shell:startup
 
 function New-StartupAhk {
-    param (
-        [string]$targetPath,
-        [string]$shortcutPath
-    )
+    param ([string]$targetPath, [string]$shortcutPath)
 
     $WScriptShell = New-Object -ComObject WScript.Shell
     $shortcut = $WScriptShell.CreateShortcut($shortcutPath)
@@ -17,10 +14,10 @@ $startupFolder = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("
 
 Get-ChildItem -Path $startupFolder -Filter "*.ahk.lnk" | ForEach-Object {
     Remove-Item -Path $_.FullName -Force
-    Write-Output "Deleted existing shortcut: $($_.Name)"
 }
+Write-Output "Deleted existing shortcuts"
 
-Get-ChildItem -Path $scriptDir -Filter "*.ahk" | ForEach-Object {
+Get-ChildItem -Path "$scriptDir\ahk" -Filter "*.ahk" | ForEach-Object {
     $ahkFile = $_.FullName
     $shortcutPath = [System.IO.Path]::Combine($startupFolder, "$($_.BaseName).ahk.lnk")
 
