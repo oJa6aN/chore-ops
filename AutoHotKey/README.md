@@ -1,6 +1,6 @@
 # Customize my PC with AutoHotKey
 
-## Install Autohotkey
+## Install AutoHotKey
 
 [AutoHotkey](https://www.autohotkey.com/)
 
