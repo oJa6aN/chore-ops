@@ -12,12 +12,15 @@ function New-StartupAhk {
 $scriptDir = Split-Path -Path $MyInvocation.MyCommand.Path -Parent
 $startupFolder = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("Startup"))
 
+# Path to the folder containing .ahk files.
+$ahkFolder = "$scriptDir\.ahk"
+
 Get-ChildItem -Path $startupFolder -Filter "*.ahk.lnk" | ForEach-Object {
     Remove-Item -Path $_.FullName -Force
 }
 Write-Output "Deleted existing shortcuts"
 
-Get-ChildItem -Path "$scriptDir\ahk" -Filter "*.ahk" | ForEach-Object {
+Get-ChildItem -Path $ahkFolder -Filter "*.ahk" | ForEach-Object {
     $ahkFile = $_.FullName
     $shortcutPath = [System.IO.Path]::Combine($startupFolder, "$($_.BaseName).ahk.lnk")
 
