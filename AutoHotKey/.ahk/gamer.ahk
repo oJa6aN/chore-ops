@@ -1,5 +1,9 @@
 #HotIf WinActive("METAL GEAR SOLID V: THE PHANTOM PAIN")
 
+;!Tab:: Send "{Tab}"
+
+;!Space:: Send " "  ;
+
 XButton1:: {
     Send("{9 down}")
     KeyWait("XButton1")
@@ -13,9 +17,5 @@ XButton2:: {
     Send("{0 up}")
     return
 }
-
-!Tab:: Send "{Tab}"
-
-!Space:: Send " "  ; Disable shortcut of PowerToys Run
 
 #HotIf
