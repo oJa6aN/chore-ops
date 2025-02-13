@@ -18,4 +18,8 @@ XButton2:: {
     return
 }
 
+#HotIf WinActive("Plague Inc Evolved")
+
+XButton1:: Send "{Space}"
+
 #HotIf
