@@ -2,8 +2,6 @@
 
 ## Install AutoHotKey
 
-
-
 [AutoHotkey](https://www.autohotkey.com/)
 
 ## Configure VSCode for AutoHotkey

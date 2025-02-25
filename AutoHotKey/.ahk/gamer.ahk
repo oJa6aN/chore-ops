@@ -20,6 +20,10 @@ XButton2:: {
 
 #HotIf WinActive("Plague Inc Evolved")
 
-XButton1:: Send "{Space}"
+XButton1:: SendInput "{Space}"
+
+#HotIf WinActive("Slay the Spire")
+
+XButton1:: SendInput "{e}"
 
 #HotIf
