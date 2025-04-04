@@ -26,4 +26,6 @@ XButton1:: SendInput "{Space}"
 
 XButton1:: SendInput "{e}"
 
+;#HotIf WinActive("Kingdom Come: Deliverance")
+
 #HotIf
